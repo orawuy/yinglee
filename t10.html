@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>เทคนิค10</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            </head>
+
+<style>
+body {
+        background-color: slategray;
+        background-image : url("01.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        }
+</style>
+
+
+<h2>เทคนิคที่ 10 ลบข้อความทีละข้อความจนหมด</h2>
+
+<button onclick="myFunction()">คลิกที่นี่</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["หมา", "แมว", "หมี", "กระต่าย"];
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() {
+    fruits.splice(0, 1);
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html> 
